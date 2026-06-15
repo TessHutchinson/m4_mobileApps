@@ -30,15 +30,15 @@ class ViewController: UIViewController {
         
         switch moodValue {
         case 0...20:
-            moodLabel.text = "Very Sad \u{1F622}"
+            moodLabel.text = "Very Sad 😥"
         case 21...40:
-            moodLabel.text = "Sad "
+            moodLabel.text = "Sad 🙁"
         case 41...60:
-            moodLabel.text = "Neutral"
+            moodLabel.text = "Neutral 😕"
         case 61...80:
-            moodLabel.text = "Happy"
+            moodLabel.text = "Happy 🙂"
         default:
-            moodLabel.text = "Very Happy"
+            moodLabel.text = "Very Happy 😃"
         }
     }
     
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         
         let emoji = moodLabel.text?.split(separator: " ").last ?? ""
         
-        savedEntryLabel.text = "on \(dateString), you felt \(emoji)"
+        savedEntryLabel.text = "On \(dateString), you felt \(emoji)"
     }
 
 
